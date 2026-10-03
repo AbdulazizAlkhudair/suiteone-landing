@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="SuiteOne: 120-day commercial activation for hospitality. From pre-opening to profitable trading, with an executive team included in one fee.">
+<meta property="og:title" content="SuiteOne · Private Activation Engine">
+<meta property="og:description" content="120-day commercial activation for hospitality. From pre-opening to profitable trading.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://suiteone.ai/">
+<meta name="theme-color" content="#050507">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23050507'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' text-anchor='middle' fill='%23F3F1EE'%3ES%3Ctspan fill='%23D42A3C'%3EO%3C/tspan%3E%3C/text%3E%3C/svg%3E">
+<title>SuiteOne · Private Activation Engine</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@300;400;500;600;700&display=swap">
+<style>
+/* Layout: public brochure for a private engine — black field under a planet-limb horizon, serif wordmark and section titles, light sans display, crimson as the single accent. Deliberately single dark theme, matching the SuiteOne workspace. */
+:root{
+  --bg:#050507; --panel:rgba(14,14,18,.72); --line:rgba(255,255,255,.1); --fg:#F3F1EE; --muted:#9A98A0; --accent:#D42A3C;
+  --f-serif:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
+  --f-sans:"Manrope","Segoe UI",system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+h1,h2,h3{margin:0;text-wrap:balance}
+p{margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:24px}
+.eyebrow{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.eyebrow.red{color:var(--accent)}
+.wordmark{font-family:var(--f-serif);font-weight:500;font-size:1.75rem;line-height:1;letter-spacing:-.01em;text-decoration:none}
+.wordmark span{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;text-transform:uppercase;letter-spacing:.22em;font-size:.68rem;font-weight:700;padding:16px 24px;border:1px solid rgba(255,255,255,.25);border-radius:2px;background:transparent;color:var(--fg);cursor:pointer;font-family:var(--f-sans);transition:background .2s,border-color .2s,color .2s}
+.btn:hover{border-color:var(--fg)}
+.btn.solid{background:var(--fg);color:#0A0A0C;border-color:var(--fg)}
+.btn.solid:hover{background:#fff}
+a:focus-visible,.btn:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* nav */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(5,5,7,.62);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav{display:flex;align-items:center;gap:28px;padding-block:16px}
+.brand small{display:block;font-size:.54rem;letter-spacing:.42em;text-transform:uppercase;color:var(--muted);margin-top:4px}
+.links{display:flex;gap:28px;margin-left:auto}
+.links a{text-decoration:none;font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;font-weight:600;color:rgba(243,241,238,.82);padding-block:6px;border-bottom:1px solid transparent}
+.links a:hover{color:var(--fg);border-color:var(--accent)}
+.ws{display:inline-flex;align-items:center;gap:8px;font-size:.62rem;letter-spacing:.26em;text-transform:uppercase;font-weight:600;text-decoration:none;padding:10px 14px;border:1px solid rgba(255,255,255,.18);border-radius:2px}
+.ws:hover{border-color:var(--fg)}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding-block:96px 72px}
+#orbit{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-weight:500;font-size:clamp(3rem,8.4vw,6.6rem);line-height:.95;letter-spacing:-.035em;margin:22px 0 28px;padding-left:22px;border-left:1px solid rgba(255,255,255,.28)}
+.hero h1 span{color:var(--accent)}
+.lead{font-size:1.25rem;font-weight:600;max-width:34ch}
+.sub{color:var(--muted);font-size:1.05rem;max-width:52ch;margin-top:10px}
+.ctas{display:flex;gap:16px;flex-wrap:wrap;margin-top:34px;align-items:center}
+.facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-top:72px;border-top:1px solid var(--line)}
+.facts div{padding:22px 20px 4px;border-left:1px solid var(--line);min-width:0}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font-family:var(--f-serif);font-weight:500;font-size:2.4rem;line-height:1}
+.facts span{display:block;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:10px;font-weight:600}
+
+/* sections */
+section.s{padding-block:96px;border-top:1px solid rgba(255,255,255,.06)}
+.shead{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:48px}
+.shead h2{font-family:var(--f-serif);font-weight:500;font-size:clamp(2.2rem,4.4vw,3.4rem);line-height:1.02;margin-top:14px}
+.shead p{color:var(--muted);max-width:52ch}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;position:relative}
+.steps::before{content:"";position:absolute;left:14px;right:0;top:14px;height:1px;background:linear-gradient(90deg,var(--accent),rgba(255,255,255,.14))}
+.step{position:relative;padding-right:24px;min-width:0}
+.dot{width:28px;height:28px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font-size:.76rem;font-weight:700;position:relative}
+.step h3{font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;font-weight:700;margin:22px 0 8px}
+.step p{color:var(--muted);font-size:.95rem}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.card{border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:24px 20px;min-width:0;transition:border-color .2s}
+.card:hover{border-color:rgba(212,42,60,.6)}
+.card h3{font-family:var(--f-serif);font-weight:600;font-size:1.45rem;line-height:1.1;margin-bottom:12px}
+.card ul{list-style:none;margin:0;padding:0;font-size:.86rem;color:rgba(243,241,238,.74);display:grid;gap:6px}
+.card li{padding-left:14px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:1px;background:var(--accent)}
+
+/* leadership */
+.lead-block{background:var(--accent);border-radius:4px;padding:40px;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.4fr);gap:40px;align-items:center}
+.lead-block .num{font-family:var(--f-serif);font-size:7rem;line-height:.8}
+.lead-block h2{font-family:var(--f-serif);font-weight:500;font-size:clamp(2rem,3.6vw,2.8rem);line-height:1.05;margin:14px 0 14px}
+.lead-block p{font-size:.95rem;color:rgba(255,255,255,.88)}
+.roles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.role{background:#fff;color:var(--accent);border-radius:3px;padding:13px 14px;display:flex;justify-content:space-between;gap:10px;align-items:center;font-weight:700;font-size:.9rem;min-width:0}
+.role-more{grid-column:1/-1;background:transparent;color:#fff;border:1px dashed rgba(255,255,255,.6);justify-content:center;font-weight:600}
+.sectors{display:flex;gap:18px;align-items:baseline;flex-wrap:wrap;margin-top:28px}
+.sectors ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.sectors li{font-size:.8rem;border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:6px 12px;color:rgba(243,241,238,.85);background:rgba(5,5,7,.4)}
+.role small{font-size:.56rem;letter-spacing:.2em;color:#8a8a92;font-weight:700;white-space:nowrap}
+
+/* principles */
+.principles{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:48px;align-items:center}
+.ones{font-family:var(--f-serif);font-weight:500;font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:1.04;letter-spacing:-.01em}
+.ones span{color:var(--accent);font-style:italic}
+.plist{display:grid;gap:0}
+.plist div{padding:22px 0;border-top:1px solid var(--line)}
+.plist div:last-child{border-bottom:1px solid var(--line)}
+.plist b{font-family:var(--f-serif);font-size:1.5rem;font-weight:500;display:block}
+.plist span{color:var(--muted);font-size:.92rem}
+
+/* contact */
+.contact{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start}
+.contact h2{font-family:var(--f-serif);font-weight:500;font-size:clamp(2.4rem,5vw,3.8rem);line-height:1;margin:14px 0 18px}
+.mail{border:1px solid var(--line);background:var(--panel);border-radius:6px;padding:28px}
+.mailrow{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:10px 0 22px}
+.addr{font-family:var(--f-serif);font-size:2rem;user-select:all;word-break:break-all}
+.mail ul{margin:0;padding-left:18px;color:rgba(243,241,238,.78);font-size:.92rem;display:grid;gap:6px}
+#copied{font-size:.8rem;color:var(--muted)}
+
+footer{border-top:1px solid rgba(255,255,255,.06);padding-block:36px 48px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;color:var(--muted);font-size:.8rem}
+
+@media (max-width:980px){.links{display:none}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.lead-block,.principles,.contact,.shead{grid-template-columns:1fr}.lead-block{padding:28px}}
+@media (max-width:700px){.facts{grid-template-columns:repeat(2,minmax(0,1fr))}.facts div:nth-child(3){border-left:0;padding-left:0}.steps{grid-template-columns:1fr 1fr;row-gap:36px}.steps::before{display:none}.hero{padding-block:64px 48px}section.s{padding-block:64px}}
+@media (max-width:480px){.wrap{padding-inline:16px}.cards,.roles{grid-template-columns:1fr}.steps{grid-template-columns:1fr}.ws span{display:none}.brand small{letter-spacing:.24em}.addr{font-size:1.5rem}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#top" style="text-decoration:none"><div class="wordmark">Suite<span>One</span></div><small>Private Activation Engine</small></a>
+  <nav class="links" aria-label="Sections"><a href="#model">The model</a><a href="#deliver">What we deliver</a><a href="#leadership">Leadership</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<section class="hero">
+  <canvas id="orbit" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="eyebrow">120-Day Commercial Activation · Hospitality</div>
+    <h1>Private<br>Activation<br>Engine<span>.</span></h1>
+    <p class="lead">From pre-opening to profitable trading.</p>
+    <p class="sub">Give us a commercially ready hospitality space. In 120 days SuiteOne turns it into an operating business with a trained team, a live product, real sales and a handover package.</p>
+    <div class="ctas"><a class="btn solid" href="#contact">Request a private briefing →</a><a class="btn" href="#model">How it works</a></div>
+    <div class="facts">
+      <div><b>120</b><span>Days, one engagement</span></div>
+      <div><b>1</b><span>Executive team, included</span></div>
+      <div><b>6</b><span>Projects under one fee</span></div>
+      <div><b>Day 120</b><span>Your team takes over</span></div>
+    </div>
+    <div class="sectors"><span class="eyebrow">Across hospitality</span><ul><li>Restaurants &amp; cafés</li><li>Hotels &amp; resorts</li><li>Lounges &amp; nightlife</li><li>Beach &amp; day clubs</li><li>Event venues</li><li>Pop-ups &amp; retail concepts</li><li>Entertainment destinations</li></ul></div>
+  </div>
+</section>
+
+<section class="s" id="model"><div class="wrap">
+  <div class="shead"><div><div class="eyebrow red">The model</div><h2>Concept. Launch. Trade. Exit.</h2></div><p>SuiteOne enters when the space is commercially ready, turns it into an operating concept, opens it, starts trading, proves the commercial model, and leaves your team in control.</p></div>
+  <div class="steps">
+    <div class="step"><div class="dot">1</div><h3>Concept</h3><p>A concept, menu and price point built to sell, with sales and profit targets set from day one.</p></div>
+    <div class="step"><div class="dot">2</div><h3>Launch</h3><p>A trained, certified team, a live product and a full venue from opening week.</p></div>
+    <div class="step"><div class="dot">3</div><h3>Trade</h3><p>Daily sales and profit control: higher average spend, stronger margins, less waste.</p></div>
+    <div class="step"><div class="dot">4</div><h3>Exit</h3><p>A complete handover package and a team that runs the business without SuiteOne.</p></div>
+  </div>
+</div></section>
+
+<section class="s" id="deliver"><div class="wrap">
+  <div class="shead"><div><div class="eyebrow red">What we deliver</div><h2>Everything the operation needs to trade.</h2></div><p>For a restaurant, a hotel outlet, a lounge or a venue, every deliverable is built to run the business, grow sales or protect profit, and it belongs to you at the end of the engagement.</p></div>
+  <div class="cards">
+    <div class="card"><h3>Concept &amp; Commercial Strategy</h3><ul><li>Commercial activation blueprint</li><li>Revenue &amp; profit plan</li><li>Landlord &amp; brand negotiations</li></ul></div>
+    <div class="card"><h3>Product &amp; Beverage</h3><ul><li>Costed menu or offer with selling prices</li><li>Signature mixology programme</li><li>Kitchen production system</li></ul></div>
+    <div class="card"><h3>Operating Standards</h3><ul><li>Operations manual &amp; SOPs</li><li>Policies that protect margin</li><li>Service standards &amp; sales scripts</li></ul></div>
+    <div class="card"><h3>People</h3><ul><li>Organisation &amp; staffing plan</li><li>Recruitment &amp; selection</li><li>Training &amp; certification</li></ul></div>
+    <div class="card"><h3>Procurement &amp; Supply</h3><ul><li>FF&amp;E, OS&amp;E, china &amp; crockery</li><li>Kitchen equipment &amp; uniforms</li><li>Suppliers &amp; opening stock</li></ul></div>
+    <div class="card"><h3>Launch &amp; Events</h3><ul><li>Launch campaign</li><li>Events programme</li><li>Soft opening &amp; opening day</li></ul></div>
+    <div class="card"><h3>Trading &amp; Performance</h3><ul><li>Daily sales &amp; profit control</li><li>Excellence audit</li><li>Monthly executive brief</li></ul></div>
+    <div class="card"><h3>Handover</h3><ul><li>Exit readiness assessment</li><li>Full handover pack</li><li>Trading plan beyond Day 120</li></ul></div>
+  </div>
+</div></section>
+
+<section class="s" id="leadership"><div class="wrap">
+  <div class="lead-block">
+    <div><div class="eyebrow" style="color:rgba(255,255,255,.8)">Executive leadership</div><h2>An executive team sized to your operation, included in the fee.</h2><p>Every operation needs a different team. SuiteOne deploys the senior roles your project requires, and every one is covered within the fee. No additional salaries, allowances, accommodation or recruitment costs.</p></div>
+    <div class="roles">
+      <div class="role">Engagement Director</div><div class="role">Operations Executive</div>
+      <div class="role">Commercial Executive</div><div class="role">Culinary / Product Executive</div>
+      <div class="role">Mixology Director</div><div class="role">Events Director</div>
+      <div class="role">People &amp; Training Executive</div><div class="role">Brand / Activation Executive</div>
+      <div class="role">Rooms &amp; Front Office Executive</div><div class="role">Spa &amp; Wellness Director</div>
+      <div class="role role-more">and more, as the operation requires</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="s"><div class="wrap principles">
+  <div class="ones"><span>One</span> suite.<br><span>One</span> executive team.<br><span>One</span> point of accountability.</div>
+  <div class="plist">
+    <div><b>Execution as a Service.</b><span>We do the work. Plans become a trading business, not a report.</span></div>
+    <div><b>120 days to operating independence.</b><span>A fixed engagement with clear outcomes at every stage.</span></div>
+    <div><b>We are designed to leave.</b><span>Success is a business that performs without us.</span></div>
+  </div>
+</div></section>
+
+<section class="s" id="contact"><div class="wrap contact">
+  <div><div class="eyebrow red">Contact</div><h2>Request a private briefing.</h2><p style="color:var(--muted);max-width:44ch">Tell us about your space and opening plans. Briefings are by appointment and every proposal is prepared for the project in hand.</p></div>
+  <div class="mail">
+    <div class="eyebrow">Write to</div>
+    <div class="mailrow"><span class="addr" id="addr">hello@suiteone.ai</span><button class="btn" type="button" id="copy">Copy</button><span id="copied" role="status"></span></div>
+    <div class="eyebrow" style="margin-bottom:10px">Include</div>
+    <ul><li>Project name, concept and location</li><li>Type of operation, size or capacity, and handover date</li><li>Target opening date</li><li>Number of projects</li></ul>
+  </div>
+</div></section>
+</main>
+
+<footer id="workspace"><div class="wrap foot">
+  <div><div class="wordmark" style="font-size:1.4rem">Suite<span>One</span></div><div style="margin-top:6px">Riyadh · © 2026 SuiteOne. SuiteOne is operated by QuickWins Solutions.</div></div>
+  <a class="btn" href="#top">Back to top ↑</a>
+</div></footer>
+
+<script>
+(function(){
+ const cv=document.getElementById('orbit');
+ function draw(){const dpr=Math.min(2,window.devicePixelRatio||1),W=cv.clientWidth,H=cv.clientHeight;if(!W||!H)return;cv.width=W*dpr;cv.height=H*dpr;const g=cv.getContext('2d');g.scale(dpr,dpr);g.clearRect(0,0,W,H);
+  let seed=11;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+  for(let i=0;i<320;i++){g.fillStyle=`rgba(255,255,255,${.12+rnd()*.5})`;const z=rnd()<.92?1:1.6;g.fillRect(rnd()*W,rnd()*H*.7,z,z)}
+  const R=Math.max(H*1.25,W*.6),cx=W*.86,cy=H*.12+R;
+  const sg=g.createRadialGradient(cx-R*.25,cy-R*.95,R*.05,cx,cy,R);sg.addColorStop(0,'#16243a');sg.addColorStop(.35,'#0a111c');sg.addColorStop(1,'#020305');
+  g.beginPath();g.arc(cx,cy,R,0,Math.PI*2);g.fillStyle=sg;g.fill();
+  const cl=[];for(let i=0;i<80;i++){const a=-Math.PI/2+(rnd()-.62)*1.15,dr=Math.pow(rnd(),1.4)*R*.32;cl.push([a,dr,18+rnd()*70])}
+  for(let i=0;i<6200;i++){const c=cl[Math.floor(rnd()*cl.length)];const a=c[0]+(rnd()-.5)*c[2]/R*2,rr=R-c[1]-(rnd()-.5)*c[2]*.5;if(rr>R-3)continue;const x=cx+Math.cos(a)*rr,y=cy+Math.sin(a)*rr;if(y>H||y<0)continue;const b=rnd();g.fillStyle=`rgba(255,${185+b*55|0},${105+b*80|0},${.12+b*.5})`;const z=b>.93?1.4:.8;g.fillRect(x,y,z,z)}
+  for(let k=0;k<5;k++){g.beginPath();g.arc(cx,cy,R+k*2.4,Math.PI*1.02,Math.PI*1.98);g.strokeStyle=`rgba(150,195,255,${.55-k*.1})`;g.lineWidth=k?3:1.4;g.shadowColor='rgba(120,175,255,.9)';g.shadowBlur=30;g.stroke()}
+  g.shadowBlur=0;const hg=g.createRadialGradient(cx,cy-R,0,cx,cy-R,W*.5);hg.addColorStop(0,'rgba(190,215,255,.2)');hg.addColorStop(1,'rgba(190,215,255,0)');g.fillStyle=hg;g.fillRect(0,0,W,H);
+  const lg=g.createLinearGradient(0,0,W*.62,0);lg.addColorStop(0,'rgba(5,5,7,.9)');lg.addColorStop(1,'rgba(5,5,7,0)');g.fillStyle=lg;g.fillRect(0,0,W,H);
+  const bg=g.createLinearGradient(0,H*.7,0,H);bg.addColorStop(0,'rgba(5,5,7,0)');bg.addColorStop(1,'rgba(5,5,7,1)');g.fillStyle=bg;g.fillRect(0,0,W,H)}
+ let t;window.addEventListener('resize',()=>{clearTimeout(t);t=setTimeout(draw,150)});draw();
+ const btn=document.getElementById('copy'),out=document.getElementById('copied'),addr=document.getElementById('addr');
+ btn.addEventListener('click',()=>{const done=()=>{out.textContent='Copied';setTimeout(()=>out.textContent='',2200)};const sel=()=>{const r=document.createRange();r.selectNodeContents(addr);const s=getSelection();s.removeAllRanges();s.addRange(r);out.textContent='Selected. Press Ctrl+C or ⌘C to copy.'};try{navigator.clipboard.writeText(addr.textContent).then(done,sel)}catch(e){sel()}});
+})();
+</script>
+</body>
+</html>
